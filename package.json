@@ -1,0 +1,123 @@
+{
+  "name": "breakpoints-manager",
+  "displayName": "Breakpoints Manager",
+  "description": "Manager for breakpoints",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+  "views": {
+    "debug": [
+      {
+        "id": "breakpointGroups",
+        "name": "Breakpoint Groups", 
+        "icon": "resources/tree_icon_dark.png",
+        "contextualTitle": "Breakpoints Manager",
+        "dragAndDrop": true
+      }
+    ]
+  },
+"commands": [
+    {
+      "command": "breakpointGroups.addGroup",
+      "title": "Add Breakpoint Group"
+    },
+    {
+      "command": "breakpointGroups.renameGroup",
+      "title": "Rename Breakpoint Group",
+      "icon": "$(edit)" 
+    },
+    {
+      "command": "breakpointGroups.deleteGroup",
+      "title": "Delete Breakpoint Group",
+      "icon": "$(trash)" 
+    },
+    {
+      "command": "breakpointGroups.addBreakpoint",
+      "title": "Add Breakpoint to Group"
+    },
+    {
+      "command": "breakpointGroups.deleteBreakpoint",
+      "title": "Remove Breakpoint",
+      "icon": "$(trash)"
+    },
+    {
+      "command": "breakpointGroups.moveBreakpoint",
+      "title": "Move Breakpoint",
+      "icon": "$(arrow-right)"
+    },
+    {
+      "command": "breakpointGroups.toggleGroup",
+      "title": "Toggle Breakpoints in Group",
+      "icon": "$(activate-breakpoints)"
+    }
+  ],
+  "menus": {
+    "view/title": [
+      {
+        "command": "breakpointGroups.addGroup",
+        "when": "view == breakpointGroups",
+        "group": "navigation"
+      }
+    ],
+    "view/item/context": [
+      {
+        "command": "breakpointGroups.renameGroup",
+        "when": "viewItem == 'group'",
+        "group": "inline",
+        "icon": "$(edit)"
+      },
+      {
+        "command": "breakpointGroups.deleteGroup",
+        "when": "viewItem == 'group'",
+        "group": "inline",
+        "icon": "$(trash)"
+      },
+      {
+        "command": "breakpointGroups.deleteBreakpoint",
+        "when": "viewItem == 'breakpoint'",
+        "group": "inline",
+        "icon": "$(trash)"
+      },
+      {
+        "command": "breakpointGroups.moveBreakpoint",
+        "when": "viewItem == 'breakpoint'",
+        "group": "inline",
+        "icon": "$(arrow-right)"
+      },
+      {
+        "command": "breakpointGroups.toggleGroup",
+        "when": "viewItem == 'group'",
+        "group": "inline",
+        "icon": "$(checklist)"
+      }
+    ]
+  }
+
+},
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.98.0",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.21.0",
+    "typescript": "^5.7.3"
+  }
+}
