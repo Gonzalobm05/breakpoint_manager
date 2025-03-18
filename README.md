@@ -36,7 +36,7 @@ The **Breakpoint Groups** extension enhances the debugging experience in VS Code
 ### **Renaming a Breakpoint Group**
 ![](resources\rename_group.gif)
 **How to use:**  
-1. Click the **Pencil icon (![](resources\Light\edit.svg) / ![](resources\Dark\edit.svg))** next to the group you want to rename.
+1. Click the **Pencil icon (![](resources\Light\edit.png) / ![](resources\Dark\edit.png))** next to the group you want to rename.
 2. Enter a new name in the prompt.
 3. The group will update with the new name.
 
@@ -45,7 +45,7 @@ The **Breakpoint Groups** extension enhances the debugging experience in VS Code
 ### **Deleting a Breakpoint Group**
 ![](resources\delete_group.gif)
 **How to use:**  
-1. Click the **Trash icon (![](resources\Light\trash.svg) / ![](resources\Dark\trash.svg))** next to the group you want to delete.
+1. Click the **Trash icon (![](resources\Light\trash.png) / ![](resources\Dark\trash.png))** next to the group you want to delete.
 2. The group will be removed.
 3. Any breakpoints from the deleted group will be moved to **"Ungrouped"**.
 
@@ -54,9 +54,9 @@ The **Breakpoint Groups** extension enhances the debugging experience in VS Code
 ### **Toggling Breakpoints in a Group**
 ![](resources\toggle_breakpoint.gif)
 **How to use:**  
-1. Click the **Activate Breakpoint icon** ![](resources\Dark\activate-breakpoints.svg) /![](resources\Light\activate-breakpoints.svg) next to the group.
-   - If the icon is **hollow (![](resources\Light\circle-outline.svg)/![](resources\Dark\circle-outline.svg))** → Breakpoints are **disabled**.
-   - If the icon is a **filled (![](resources\Light\circle-filled.svg)/![](resources\Dark\circle-filled.svg))** → Breakpoints are **enabled**.
+1. Click the **Activate Breakpoint icon** ![](resources\Dark\activate-breakpoints.png) /![](resources\Light\activate-breakpoints.png) next to the group.
+   - If the icon is **hollow (![](resources\Light\circle-outline.png)/![](resources\Dark\circle-outline.png))** → Breakpoints are **disabled**.
+   - If the icon is a **filled (![](resources\Light\circle-filled.png)/![](resources\Dark\circle-filled.png))** → Breakpoints are **enabled**.
 2. Clicking the icon toggles all breakpoints in that group ON or OFF.
 
 ---
@@ -64,7 +64,7 @@ The **Breakpoint Groups** extension enhances the debugging experience in VS Code
 ### **Deleting a Breakpoint**
 ![](resources\remove_breakpoint.gif)
 **How to use:**  
-1. Click the **Trash icon (![](resources\Light\trash.svg) / ![](resources\Dark\trash.svg))** next to the breakpoint you want to remove.
+1. Click the **Trash icon (![](resources\Light\trash.png) / ![](resources\Dark\trash.png))** next to the breakpoint you want to remove.
 2. The breakpoint will be removed from the list and the code.
 
 ---
@@ -72,7 +72,7 @@ The **Breakpoint Groups** extension enhances the debugging experience in VS Code
 ### **Moving a Breakpoint to Another Group**
 ![](resources\rename_group.gif)
 **How to use:**  
-1. Click the **Arrow icon (![](resources\Light\arrow-right.svg) / ![](resources\Dark\arrow-right.svg))** next to the breakpoint you want to move.
+1. Click the **Arrow icon (![](resources\Light\arrow-right.png) / ![](resources\Dark\arrow-right.png))** next to the breakpoint you want to move.
 2. Select the **destination group** from the prompt.
 3. The breakpoint will be moved to the selected group.
 
